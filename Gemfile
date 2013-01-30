@@ -1,5 +1,4 @@
 source :rubygems
-gem 'zmq'
 gem 'rufus-scheduler'
 gem 'json'
 
@@ -9,7 +8,7 @@ end
 
 group :development do
   gem 'guard'
-  gem 'growl'
+  # gem 'growl'
   gem 'guard-rspec'
 end
 
