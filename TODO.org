@@ -1,6 +1,5 @@
-* Cron
-** TODO Merge cron and scheduler
-** TODO Merge Check and Job
-** TODO Execute checks
-** TODO Transmit Results
-* Listener 
+* Scheduler
+** Rename scheduler to plain varanid
+** remove listener and pipeline
+** scan through a directory hierarchy for checks
+** don't load checks that won't be executed.
