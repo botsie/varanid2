@@ -37,7 +37,8 @@ module Varanid
 
     def parse_config
       pattern = File.join(self.directory, "*.json")
-      Dir.glob(pattern) do |filename|
+      Dir.glob(pattern).sort.each do |filename|
+        p filename
         content = File.open(filename, "r") { |f| f.read }
         config = JSON.parse content
         config.each_pair do |s_key,value|
